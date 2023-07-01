@@ -49,6 +49,10 @@ img {
   overflow: hidden;
 }
 
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -423,7 +427,7 @@ img {
   transition: 0.5s ease;
   opacity: 0.6;
   background-color: #dbebf1;
-  transform: rotate(360deg) scale(0.8);
+  transform: rotate(-360deg) scale(0.8);
   border-radius: 50%;
 }
 
