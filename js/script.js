@@ -18,6 +18,7 @@ modalCloseButton.addEventListener("click", function() {
 document.addEventListener('keydown', function(evt) {
   if (evt.key === "Escape") {
     modal.classList.add("modal-container-close")
+    body.classList.remove('overflow-hidden');
   };
 });
 
