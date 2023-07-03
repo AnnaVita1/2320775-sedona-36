@@ -37,7 +37,7 @@ document.querySelectorAll('.toggle-flex .modal-toggle-min').forEach(function(but
   button.addEventListener('click', function() {
     let input = this.parentElement.querySelector('.field-small');
     let count = parseInt(input.value) - 1;
-    count = count < 1 ? 1 : count;
+    count = count < parseInt(input.dataset.minCount) ? parseInt(input.dataset.minCount) : count;
     input.value = count;
   });
 });
