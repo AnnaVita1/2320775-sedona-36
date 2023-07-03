@@ -809,7 +809,7 @@ img {
   background-size: 25%;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  background-position-x: 2000px;
+  background-position-x: 2500px;
   animation: sliderin;
   animation-duration: 20s;
   animation-timing-function: ease;
@@ -822,7 +822,7 @@ img {
 
 @keyframes sliderin {
   from {
-    background-position-x: 2000px;
+    background-position-x: 2500px;
   }
   to {
     background-position-x: -2000px;
