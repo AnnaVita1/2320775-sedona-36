@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+*:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
 html {
   height: 100%;
 }
@@ -126,7 +130,7 @@ img {
 }
 
 .navigation-item a {
-  padding: 20px 16px;
+  padding: 16px 16px;
 }
 
 .navigation-item .button {
@@ -190,7 +194,7 @@ img {
   top: 16%;
   left: 44%;
   z-index: 1;
-  transform: translate(4px, 5px);
+  transform: translate(7px, 3px);
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -200,8 +204,8 @@ img {
 
 .navigation-user li:nth-child(2)::after {
   position: absolute;
-  top: 16%;
-  left: 44%;
+  top: 10%;
+  left: 50%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -211,7 +215,7 @@ img {
 
 .navigation-item-user a {
   display: block;
-  padding: 24px 13px 23px 13px;
+  padding: 16px 13px;
 }
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
@@ -667,6 +671,7 @@ img {
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   color: #000000;
@@ -1952,7 +1957,6 @@ img {
 
 .pagination-link:not(.pagination-dots):focus {
   background: #68a2ca;
-  outline: 1px solid #82b3d3;
 }
 
 .pagination-link:not(.pagination-dots):active {

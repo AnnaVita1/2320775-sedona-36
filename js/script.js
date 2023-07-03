@@ -1,30 +1,33 @@
-let modal = document.querySelector(".modal-container");
-let modalWindow = document.querySelector(".modal-window");
-let modalOpenButton = document.querySelector(".modal-open-button");
-let modalCloseButton = document.querySelector(".modal-close-button");
+let modal = document.querySelector('.modal-container');
+let modalWindow = document.querySelector('.modal-window');
+let modalOpenButton = document.querySelector('.modal-open-button');
+let modalCloseButton = document.querySelector('.modal-close-button');
 let body = document.body;
 
-modalOpenButton.addEventListener("click", function (evt) {
+/*
+Реализация модального окна и элементов в нём
+*/
+modalOpenButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  modal.classList.remove("modal-container-close");
+  modal.classList.remove('modal-container-close');
   body.classList.add('overflow-hidden');
 });
 
-modalCloseButton.addEventListener("click", function() {
-  modal.classList.add("modal-container-close");
+modalCloseButton.addEventListener('click', function() {
+  modal.classList.add('modal-container-close');
   body.classList.remove('overflow-hidden');
 });
 
 document.addEventListener('keydown', function(evt) {
-  if (evt.key === "Escape") {
-    modal.classList.add("modal-container-close")
+  if (evt.key === 'Escape') {
+    modal.classList.add('modal-container-close')
     body.classList.remove('overflow-hidden');
   };
 });
 
-modal.addEventListener("click", function (evt) {
+modal.addEventListener('click', function (evt) {
   if (!modalWindow.contains(evt.target)) {
-    modal.classList.add("modal-container-close");
+    modal.classList.add('modal-container-close');
     body.classList.remove('overflow-hidden');
   };
 });
@@ -81,3 +84,14 @@ document.querySelectorAll('.toggle-flex .field-small').forEach(function(input) {
     }
   });
 });
+
+/*
+Реализация элементов на странице
+*/
+  const popupSedona = document.querySelector('.navigation-link-sedona');
+  popupSedona.addEventListener('click', function(evt) {
+    const result = confirm('Вы переходите по внешней ссылке на другой сайт. Продолжить?');
+    if (!result) {
+      evt.preventDefault();
+    }
+  });
