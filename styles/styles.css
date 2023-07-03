@@ -347,8 +347,8 @@ img {
   width: 400px;
   min-height: 385px;
   list-style-type: none;
+  transition: 3s linear;
 }
-
 
 .advantages-item img {
   height: auto;
@@ -427,11 +427,11 @@ img {
 }
 
 .advantages-item.middle-row:hover {
-  transition: 1s ease;
-  opacity: 0.6;
   background-color: #dbebf1;
   transform: rotate(-360deg) scale(0.8);
   border-radius: 50%;
+  transition: 1s ease;
+  opacity: 0.6;
 }
 
 /*ПРИЕЗЖАЙТЕ*/
